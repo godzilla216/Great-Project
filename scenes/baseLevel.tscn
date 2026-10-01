@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dakh8ptig0j1s"]
+
+[ext_resource type="PackedScene" uid="uid://b7h4e50jbeafg" path="res://scenes/main.tscn" id="1_du7h1"]
+[ext_resource type="PackedScene" uid="uid://brh3x18gyjmhi" path="res://scenes/levelRoot.tscn" id="2_p7w7b"]
+
+[node name="Main" type="Node2D" unique_id=415135414]
+
+[node name="Node2D" parent="." unique_id=850723930 instance=ExtResource("1_du7h1")]
+z_index = 1
+
+[node name="levelRoot" parent="." unique_id=129923773 instance=ExtResource("2_p7w7b")]
