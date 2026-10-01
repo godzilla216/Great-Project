@@ -387,9 +387,8 @@ animations = [{
 "speed": 7.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u8kr6"]
-radius = 5.0
-height = 14.5
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uchyk"]
+size = Vector2(8, 8)
 
 [node name="Node2D" type="Node2D" unique_id=850723930]
 
@@ -403,8 +402,8 @@ animation = &"attackFront"
 autoplay = "attackRight"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=291898443]
-position = Vector2(-1.25, -0.5)
-shape = SubResource("CapsuleShape2D_u8kr6")
+position = Vector2(-1.25, 2.75)
+shape = SubResource("RectangleShape2D_uchyk")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1597914267]
 position_smoothing_enabled = true
