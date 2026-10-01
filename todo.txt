@@ -1,0 +1,31 @@
+1. Ian
+Physics Homework
+
+2. Max
+Enemy Sprites(Orc)
+
+3. Justin
+Storyboard
+
+4. Philip
+Menu
+
+5. Jamie
+
+6. Kit
+
+7. Goganator
+Storyboard
+
+To create:
+Main Character(Peasant and Knight form)
+Armor
+Scenes
+Menu
+Dragon
+Numerous types of enemies
+
+
+Link to LucidChart:
+https://lucid.app/lucidchart/3fb04cde-81d0-417b-af6f-307b56d72279/edit?viewport_loc=1916%2C-766%2C1087%2C526%2C0_0&invitationId=inv_e61ee57a-ebdf-4f7b-9ec8-55d1dee57824
+
