@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Tp="*uid://cpr1qrc64u5jn"
+TP="*uid://cpr1qrc64u5jn"
 
 [display]
 

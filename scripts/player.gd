@@ -7,7 +7,8 @@ const SPEED := 300.0
 var last_direction := Vector2.DOWN
 var attacking := false
 
-
+func _ready () -> void:
+	position = TP.spawn_position
 func _physics_process(_delta: float) -> void:
 	if Input.is_action_just_pressed("Attack") and not attacking:
 		attack()
