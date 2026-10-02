@@ -421,24 +421,24 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uchyk"]
-size = Vector2(8, 8)
+size = Vector2(13, 12.5)
 
-[node name="Node2D" type="Node2D" unique_id=850723930]
+[node name="node2D" type="Node2D" unique_id=850723930]
 
-[node name="Player" type="CharacterBody2D" parent="." unique_id=625335497]
+[node name="player" type="CharacterBody2D" parent="." unique_id=625335497]
 scale = Vector2(4, 4)
 script = ExtResource("1_0e48y")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1059467756]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=1059467756]
 sprite_frames = SubResource("SpriteFrames_u8kr6")
 animation = &"attackDown"
 autoplay = "idleRight"
 
-[node name="Player" type="CollisionShape2D" parent="Player" unique_id=291898443]
-position = Vector2(-1.25, 2.75)
+[node name="PlayerCollision" type="CollisionShape2D" parent="player" unique_id=291898443]
+position = Vector2(-0.5, 2.75)
 shape = SubResource("RectangleShape2D_uchyk")
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1597914267]
+[node name="Camera2D" type="Camera2D" parent="player" unique_id=1597914267]
 position_smoothing_enabled = true
 position_smoothing_speed = 3.0
 rotation_smoothing_enabled = true
