@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cpsutmygbdqd2" path="res://assets/Interior.png" id="1_rk7hg"]
 [ext_resource type="Texture2D" uid="uid://c8nsbgrcc8jig" path="res://assets/walls_floor.png" id="2_se78b"]
 [ext_resource type="PackedScene" uid="uid://b7h4e50jbeafg" path="res://scenes/playerLevel.tscn" id="3_3bgk5"]
+[ext_resource type="Script" uid="uid://cnkvq1ahopsgf" path="res://scenes/area_2d.gd" id="4_se78b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o1325"]
 texture = ExtResource("1_rk7hg")
@@ -798,6 +799,9 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_rk7hg")
 sources/1 = SubResource("TileSetAtlasSource_se78b")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cldnu"]
+size = Vector2(72.25, 92)
+
 [node name="Node2D" type="Node2D" unique_id=394279763]
 
 [node name="Bottom" type="TileMapLayer" parent="." unique_id=1258448841]
@@ -812,3 +816,10 @@ tile_set = SubResource("TileSet_cldnu")
 
 [node name="Node2D" parent="." unique_id=850723930 instance=ExtResource("3_3bgk5")]
 position = Vector2(394, -982)
+
+[node name="Door2" type="Area2D" parent="." unique_id=1235916964]
+script = ExtResource("4_se78b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door2" unique_id=1169783995]
+position = Vector2(382.125, -1098)
+shape = SubResource("RectangleShape2D_cldnu")
