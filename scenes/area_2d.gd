@@ -5,5 +5,5 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "player":
-		TP.teleport_player(Vector2(10, 14) * 64)
+		TP.teleport_player((Vector2(10, 14) * 64), "down")
 		get_tree().change_scene_to_file("res://scenes/main.tscn")

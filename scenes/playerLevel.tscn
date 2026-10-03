@@ -421,7 +421,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uchyk"]
-size = Vector2(13, 12.5)
+size = Vector2(11, 12.5)
 
 [node name="node2D" type="Node2D" unique_id=850723930]
 
@@ -435,7 +435,7 @@ animation = &"attackDown"
 autoplay = "idleRight"
 
 [node name="PlayerCollision" type="CollisionShape2D" parent="player" unique_id=291898443]
-position = Vector2(-0.5, 2.75)
+position = Vector2(-1.5, 2.75)
 shape = SubResource("RectangleShape2D_uchyk")
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1597914267]
