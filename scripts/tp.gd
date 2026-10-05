@@ -1,10 +1,34 @@
-extends Node
+extends CanvasLayer
+
+@onready var color_rect: ColorRect = $ColorRect
 
 var spawn_position := Vector2.ZERO
-var direction := "down"
 
-func teleport_player(position: Vector2, new_direction: String) -> void:
+
+func _ready() -> void:
+	color_rect.modulate.a = 0.0
+
+
+func teleport_player(position: Vector2, scene_path: String) -> void:
 	spawn_position = position
-	direction = new_direction
-	print(position)
-	print(direction)
+
+	await fade_out()
+
+	get_tree().change_scene_to_file(scene_path)
+
+	await get_tree().process_frame
+
+	fade_in()
+
+
+func fade_out() -> void:
+	var tween = create_tween()
+	tween.tween_property(color_rect, "modulate:a", 1.0, 0.5)
+	await tween.finished
+
+
+func fade_in() -> void:
+	color_rect.modulate.a = 1.0
+
+	var tween = create_tween()
+	tween.tween_property(color_rect, "modulate:a", 0.0, 0.5)
