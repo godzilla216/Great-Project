@@ -431,7 +431,7 @@ script = ExtResource("1_0e48y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=1059467756]
 sprite_frames = SubResource("SpriteFrames_u8kr6")
-animation = &"attackDown"
+animation = &"idleDown"
 autoplay = "idleRight"
 
 [node name="PlayerCollision" type="CollisionShape2D" parent="player" unique_id=291898443]

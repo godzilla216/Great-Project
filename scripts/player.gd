@@ -13,7 +13,6 @@ func _physics_process(_delta: float) -> void:
 	if Input.is_action_just_pressed("Attack") and not attacking:
 		attack()
 		return
-		
 	process_movement()
 	move_and_slide()
 
@@ -56,9 +55,6 @@ func play_animation(prefix: String, dir: Vector2) -> void:
 func attack() -> void:
 	attacking = true
 	velocity = Vector2.ZERO
-
 	play_animation("attack", last_direction)
-
 	await animated_sprite_2d.animation_finished
-
 	attacking = false
