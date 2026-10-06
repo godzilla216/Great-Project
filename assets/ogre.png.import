@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw1ymdxejeoy"
-path="res://.godot/imported/pixilart-sprite.png-fbb58c140847e30123140988b50c23fd.ctex"
+path="res://.godot/imported/ogre.png-21c11e983f21001e7f9c4e00dc3ce00f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pixilart-sprite.png"
-dest_files=["res://.godot/imported/pixilart-sprite.png-fbb58c140847e30123140988b50c23fd.ctex"]
+source_file="res://assets/ogre.png"
+dest_files=["res://.godot/imported/ogre.png-21c11e983f21001e7f9c4e00dc3ce00f.ctex"]
 
 [params]
 
