@@ -4,9 +4,9 @@
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1293270208]
 
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer" unique_id=134861897]
+[node name="HealthBar" type="ProgressBar" parent="CanvasLayer" unique_id=134861897]
 offset_left = 1.0
 offset_top = -1.0
-offset_right = 281.0
-offset_bottom = 55.0
+offset_right = 582.0
+offset_bottom = 147.0
 value = 100.0
