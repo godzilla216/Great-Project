@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://crtkegq5wobgr"]
+
+[ext_resource type="Script" uid="uid://cofpcqd4trhi8" path="res://peasant.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://knetuw0odwej" path="res://assets/16x16peasantsprite.png" id="2_epypp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jodw7"]
+size = Vector2(8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hol4"]
+atlas = ExtResource("2_epypp")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6r6c"]
+atlas = ExtResource("2_epypp")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdubu"]
+atlas = ExtResource("2_epypp")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d21ai"]
+atlas = ExtResource("2_epypp")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pripk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0hol4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6r6c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdubu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d21ai")
+}],
+"loop": 1,
+"name": &"walkForward",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1606104807]
+
+[node name="Peasant" type="CharacterBody2D" parent="." unique_id=904102945]
+scale = Vector2(4, 4)
+script = ExtResource("1_0e48y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Peasant" unique_id=1909698060]
+position = Vector2(1.25, 4)
+shape = SubResource("RectangleShape2D_jodw7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Peasant" unique_id=1225411391]
+sprite_frames = SubResource("SpriteFrames_pripk")
+animation = &"walkForward"
