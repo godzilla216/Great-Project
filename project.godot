@@ -11,14 +11,13 @@ config_version=5
 [application]
 
 config/name="Kingdom Come Deliverance III"
-run/main_scene="uid://dakh8ptig0j1s"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 TP="*uid://dtrrjcurvi5ea"
-Gui="uid://wcte2ygc6mai"
+Gui="*uid://wcte2ygc6mai"
 
 [display]
 

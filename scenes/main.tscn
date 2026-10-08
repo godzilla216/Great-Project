@@ -12,12 +12,4 @@ z_index = 1
 [node name="levelRoot" parent="." unique_id=129923773 instance=ExtResource("2_sugp2")]
 
 [node name="Node2D" parent="." unique_id=1606104807 instance=ExtResource("3_sugp2")]
-<<<<<<< Updated upstream
 position = Vector2(924, 1)
-=======
-<<<<<<< HEAD
-position = Vector2(132, 71)
-=======
-position = Vector2(924, 1)
->>>>>>> 5c11444af88c319b67b342b6052e9ee03af1d3da
->>>>>>> Stashed changes
