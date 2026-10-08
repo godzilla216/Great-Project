@@ -12,4 +12,4 @@ z_index = 1
 [node name="levelRoot" parent="." unique_id=129923773 instance=ExtResource("2_sugp2")]
 
 [node name="Node2D" parent="." unique_id=1606104807 instance=ExtResource("3_sugp2")]
-position = Vector2(1022, -136)
+position = Vector2(924, 1)
