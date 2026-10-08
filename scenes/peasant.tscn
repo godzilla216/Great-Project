@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://crtkegq5wobgr"]
 
-[ext_resource type="Script" uid="uid://cofpcqd4trhi8" path="res://peasant.gd" id="1_sbahr"]
+[ext_resource type="Script" uid="uid://cofpcqd4trhi8" path="res://scripts/peasant.gd" id="1_sbahr"]
 [ext_resource type="Texture2D" uid="uid://knetuw0odwej" path="res://assets/16x16peasantsprite.png" id="2_5s05r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jodw7"]

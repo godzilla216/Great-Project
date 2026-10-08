@@ -7,4 +7,6 @@ func _on_body_entered(body: Node2D) -> void:
 	if body.name == "player":
 		TP.teleport_player(
 			(Vector2(10, 14) * 64),
-			"res://scenes/main.tscn")
+			"res://scenes/main.tscn",
+			true)
+			

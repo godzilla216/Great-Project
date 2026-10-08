@@ -9,12 +9,15 @@ func _ready() -> void:
 	color_rect.modulate.a = 0.0
 
 
-func teleport_player(position: Vector2, scene_path: String) -> void:
+func teleport_player(position: Vector2, scene_path: String, anim: bool) -> void:
 	spawn_position = position
-	await fade_out()
-	get_tree().change_scene_to_file(scene_path)
-	await get_tree().process_frame
-	fade_in()
+	if anim:
+		await fade_out()
+		get_tree().change_scene_to_file(scene_path)
+		await get_tree().process_frame
+		fade_in()
+	else:
+		get_tree().change_scene_to_file(scene_path)
 
 func fade_out() -> void:
 	active = true

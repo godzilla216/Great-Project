@@ -1,5 +1,59 @@
 [gd_scene format=3 uid="uid://wcte2ygc6mai"]
 
+[ext_resource type="Texture2D" uid="uid://bukpvwug4ypou" path="res://assets/heart.png" id="1_efmwq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mfius"]
+atlas = ExtResource("1_efmwq")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynd5l"]
+atlas = ExtResource("1_efmwq")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b8iy7"]
+atlas = ExtResource("1_efmwq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cldnu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mfius")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynd5l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b8iy7")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Gui" type="Node2D" unique_id=1811836786]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1293270208]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=1002190178]
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/HBoxContainer" unique_id=210289659]
+position = Vector2(32, 32)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_cldnu")
+autoplay = "default"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="CanvasLayer/HBoxContainer" unique_id=519979870]
+position = Vector2(82, 32)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_cldnu")
+autoplay = "default"
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="CanvasLayer/HBoxContainer" unique_id=1259078933]
+position = Vector2(132, 32)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_cldnu")
+autoplay = "default"
