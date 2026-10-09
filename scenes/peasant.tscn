@@ -22,6 +22,54 @@ region = Rect2(96, 0, 16, 16)
 atlas = ExtResource("2_5s05r")
 region = Rect2(112, 0, 16, 16)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_330e5"]
+atlas = ExtResource("2_5s05r")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_208ka"]
+atlas = ExtResource("2_5s05r")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5sotp"]
+atlas = ExtResource("2_5s05r")
+region = Rect2(160, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f0u40"]
+atlas = ExtResource("2_5s05r")
+region = Rect2(176, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sbahr"]
+atlas = ExtResource("2_5s05r")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5s05r"]
+atlas = ExtResource("2_5s05r")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0dhk"]
+atlas = ExtResource("2_5s05r")
+region = Rect2(160, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_buwem"]
+atlas = ExtResource("2_5s05r")
+region = Rect2(176, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hj0u7"]
+atlas = ExtResource("2_5s05r")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6yst"]
+atlas = ExtResource("2_5s05r")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xwkn"]
+atlas = ExtResource("2_5s05r")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7k5ev"]
+atlas = ExtResource("2_5s05r")
+region = Rect2(48, 0, 16, 16)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_pripk"]
 animations = [{
 "frames": [{
@@ -38,7 +86,58 @@ animations = [{
 "texture": SubResource("AtlasTexture_d21ai")
 }],
 "loop": 1,
-"name": &"walkForward",
+"name": &"walkDown",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_330e5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_208ka")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5sotp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f0u40")
+}],
+"loop": 1,
+"name": &"walkLeft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sbahr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5s05r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0dhk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_buwem")
+}],
+"loop": 1,
+"name": &"walkRight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hj0u7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6yst")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0xwkn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7k5ev")
+}],
+"loop": 1,
+"name": &"walkUp",
 "speed": 5.0
 }]
 
@@ -54,4 +153,5 @@ shape = SubResource("RectangleShape2D_jodw7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Peasant" unique_id=1225411391]
 sprite_frames = SubResource("SpriteFrames_pripk")
-animation = &"walkForward"
+animation = &"walkLeft"
+autoplay = "walkRight"
