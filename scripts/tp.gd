@@ -1,13 +1,13 @@
 extends CanvasLayer
 
 @onready var color_rect: ColorRect = $ColorRect
+@onready var camera: Camera2D = $player/Camera2D
 
 var spawn_position := Vector2.ZERO
 var active = false
 
 func _ready() -> void:
 	color_rect.modulate.a = 0.0
-
 
 func teleport_player(position: Vector2, scene_path: String, anim: bool) -> void:
 	spawn_position = position
