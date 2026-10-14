@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dbx1icoxp4wou" path="res://scripts/player.gd" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://cywd3vtk8k6h2" path="res://assets/Player.png" id="1_wtcfe"]
 [ext_resource type="Texture2D" uid="uid://nshgusntscdu" path="res://assets/16p Knight.png" id="3_bomeu"]
+[ext_resource type="Texture2D" uid="uid://bvw8hm5jmrd7v" path="res://assets/pixil-frame-0 (1).png" id="3_jt1jj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0wfyh"]
 atlas = ExtResource("1_wtcfe")
@@ -68,9 +69,9 @@ region = Rect2(64, 256, 32, 32)
 atlas = ExtResource("1_wtcfe")
 region = Rect2(96, 256, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jt1jj"]
-atlas = ExtResource("3_bomeu")
-region = Rect2(0, 0, 16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_xmyaq"]
+atlas = ExtResource("3_jt1jj")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fs4d3"]
 atlas = ExtResource("1_wtcfe")
@@ -244,7 +245,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jt1jj")
+"texture": SubResource("AtlasTexture_xmyaq")
 }],
 "loop": 1,
 "name": &"idleDown",
@@ -352,7 +353,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uchyk"]
-size = Vector2(11, 12.5)
+size = Vector2(8.875, 8.5)
 
 [node name="node2D" type="Node2D" unique_id=850723930]
 
@@ -362,11 +363,11 @@ script = ExtResource("1_0e48y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=1059467756]
 sprite_frames = SubResource("SpriteFrames_u8kr6")
-animation = &"attackUp"
+animation = &"idleDown"
 autoplay = "idleRight"
 
 [node name="PlayerCollision" type="CollisionShape2D" parent="player" unique_id=291898443]
-position = Vector2(-1.5, 2.75)
+position = Vector2(-0.5, 3.75)
 shape = SubResource("RectangleShape2D_uchyk")
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1597914267]
