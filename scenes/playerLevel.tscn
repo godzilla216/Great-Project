@@ -298,13 +298,13 @@ size = Vector2(8.875, 8.5)
 
 [node name="player" type="CharacterBody2D" parent="." unique_id=625335497]
 scale = Vector2(4, 4)
+collision_layer = 2
 script = ExtResource("1_0e48y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=1059467756]
 sprite_frames = SubResource("SpriteFrames_u8kr6")
-animation = &"walkDown"
+animation = &"attackUp"
 autoplay = "idleRight"
-frame_progress = 0.6626345
 
 [node name="PlayerCollision" type="CollisionShape2D" parent="player" unique_id=291898443]
 position = Vector2(-0.5, 3.75)
