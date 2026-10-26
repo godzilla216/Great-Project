@@ -2,8 +2,6 @@
 
 [ext_resource type="Script" uid="uid://dbx1icoxp4wou" path="res://scripts/player.gd" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://cywd3vtk8k6h2" path="res://assets/Player.png" id="1_wtcfe"]
-[ext_resource type="Texture2D" uid="uid://nshgusntscdu" path="res://assets/16p Knight.png" id="3_bomeu"]
-[ext_resource type="Texture2D" uid="uid://bvw8hm5jmrd7v" path="res://assets/pixil-frame-0 (1).png" id="3_jt1jj"]
 [ext_resource type="Texture2D" uid="uid://y3yc26tlaqqg" path="res://assets/pixilart-sprite (2).png" id="5_pf7w5"]
 [ext_resource type="Texture2D" uid="uid://wer668mcjlgn" path="res://assets/knightsprite (3).png" id="6_vhwbe"]
 
@@ -71,16 +69,16 @@ region = Rect2(64, 256, 32, 32)
 atlas = ExtResource("1_wtcfe")
 region = Rect2(96, 256, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xmyaq"]
-atlas = ExtResource("3_jt1jj")
+[sub_resource type="AtlasTexture" id="AtlasTexture_jt1jj"]
+atlas = ExtResource("6_vhwbe")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pf7w5"]
-atlas = ExtResource("5_pf7w5")
+atlas = ExtResource("6_vhwbe")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jqk35"]
-atlas = ExtResource("5_pf7w5")
+atlas = ExtResource("6_vhwbe")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vhwbe"]
@@ -148,28 +146,8 @@ atlas = ExtResource("6_vhwbe")
 region = Rect2(320, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3788l"]
-atlas = ExtResource("3_bomeu")
-region = Rect2(128, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nefy0"]
-atlas = ExtResource("3_bomeu")
-region = Rect2(144, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_450i6"]
-atlas = ExtResource("3_bomeu")
-region = Rect2(160, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_n8xho"]
-atlas = ExtResource("3_bomeu")
-region = Rect2(176, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_c7kny"]
-atlas = ExtResource("3_bomeu")
-region = Rect2(192, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8jny2"]
-atlas = ExtResource("3_bomeu")
-region = Rect2(208, 0, 16, 16)
+atlas = ExtResource("6_vhwbe")
+region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_u8kr6"]
 animations = [{
@@ -243,7 +221,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xmyaq")
+"texture": SubResource("AtlasTexture_jt1jj")
 }],
 "loop": 1,
 "name": &"idleDown",
@@ -326,21 +304,6 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3788l")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nefy0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_450i6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_n8xho")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_c7kny")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8jny2")
 }],
 "loop": 1,
 "name": &"walkUp",
@@ -359,7 +322,7 @@ script = ExtResource("1_0e48y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=1059467756]
 sprite_frames = SubResource("SpriteFrames_u8kr6")
-animation = &"walkDown"
+animation = &"walkUp"
 autoplay = "idleRight"
 
 [node name="PlayerCollision" type="CollisionShape2D" parent="player" unique_id=291898443]
