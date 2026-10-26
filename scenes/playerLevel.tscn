@@ -83,6 +83,38 @@ region = Rect2(64, 0, 32, 32)
 atlas = ExtResource("5_pf7w5")
 region = Rect2(32, 0, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_vhwbe"]
+atlas = ExtResource("5_pf7w5")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1y1eh"]
+atlas = ExtResource("5_pf7w5")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgjmx"]
+atlas = ExtResource("5_pf7w5")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_npxh1"]
+atlas = ExtResource("5_pf7w5")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ywhfx"]
+atlas = ExtResource("5_pf7w5")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmwln"]
+atlas = ExtResource("5_pf7w5")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7m2yy"]
+atlas = ExtResource("5_pf7w5")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30juu"]
+atlas = ExtResource("5_pf7w5")
+region = Rect2(224, 0, 32, 32)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_ei1jp"]
 atlas = ExtResource("6_vhwbe")
 region = Rect2(96, 0, 32, 32)
@@ -233,7 +265,31 @@ animations = [{
 "name": &"idleUp",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vhwbe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1y1eh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgjmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_npxh1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ywhfx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmwln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7m2yy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30juu")
+}],
 "loop": 1,
 "name": &"walkDown",
 "speed": 10.0
@@ -303,7 +359,7 @@ script = ExtResource("1_0e48y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=1059467756]
 sprite_frames = SubResource("SpriteFrames_u8kr6")
-animation = &"attackUp"
+animation = &"walkDown"
 autoplay = "idleRight"
 
 [node name="PlayerCollision" type="CollisionShape2D" parent="player" unique_id=291898443]
